@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Digital Clock</title>
+  </head>
+  <body class="flex flex-col items-center justify-center h-screen bg-blue-300">
+    <div class="text-5xl md:text-8xl text-white pb-6">Current Time</div>
+    <div class="flex justify-between mx-8">
+      <div
+        id="hours"
+        class="h-[300] w-[210] min-w-[150px] md:min-w-[205px] text-center p-6 m-4 bg-white rounded-xl text-6xl md:text-9xl shadow-2xl"></div>
+      <div
+        id="minutes"
+        class="h-[300] w-[210] min-w-[150px] md:min-w-[205px] text-center p-6 m-4 bg-white rounded-xl text-6xl md:text-9xl shadow-2xl"></div>
+      <div
+        id="seconds"
+        class="h-[300] w-[210] min-w-[150px] md:min-w-[205px] text-center p-6 m-4 bg-white rounded-xl md:text-9xl hidden md:block shadow-2xl"></div>
+      <div
+        id="AM"
+        class="h-[300] w-[210] min-w-[150px] md:min-w-[205px] text-center p-6 m-4 bg-white rounded-xl text-6xl md:text-9xl shadow-2xl"></div>
+    </div>
+
+    <div
+      class="mt-8 text-white border border-white rounded-2xl p-4 md:hidden hover:text-black hover:bg-white shadow-2xl hover:cursor-pointer duration-500 hover:scale-105">
+      Show Seconds
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
