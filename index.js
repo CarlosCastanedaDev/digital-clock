@@ -29,8 +29,6 @@ function showTime() {
   min = min < 10 ? '0' + min : min;
   sec = sec < 10 ? '0' + sec : sec;
 
-  let currentTime = hour + ':' + min + am_pm;
-
   switch (day) {
     case 0:
       day = 'Sunday';
@@ -81,12 +79,12 @@ function showTime() {
   document.getElementById('minutes').innerHTML = min;
   document.getElementById('seconds').innerHTML = sec;
   document.getElementById('AM').innerHTML = am_pm;
-  document.getElementById('fullDate').innerHTML =
-    day + ' ' + month + ' ' + date + ', ' + year;
-  //   document.getElementById('day').innerHTML = day;
-  //   document.getElementById('month').innerHTML = month;
-  //   document.getElementById('date').innerHTML = date + ' , ';
-  //   document.getElementById('year').innerHTML = ' ' + year;
+  document.getElementById('days').innerHTML = day;
+  document.getElementById('dates').innerHTML = `${month} ${date}, ${year}`;
+
+  document.getElementById('showSec').addEventListener('click', () => {
+    seconds.classList.toggle('hidden');
+  });
 }
 
 showTime();
