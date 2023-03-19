@@ -8,7 +8,7 @@
     <title>Digital Clock</title>
   </head>
   <body
-    class="flex flex-col items-center md:justify-center mt-16 md:mt-0 h-screen bg-blue-300">
+    class="flex flex-col items-center md:justify-center mt-16 md:mt-0 h-screen bg-gradient-to-b from-cyan-500 to-blue-500">
     <div class="text-5xl md:text-8xl pb-6">Today's Date</div>
     <div
       id="fullDate"
@@ -17,24 +17,24 @@
       <div id="dates"></div>
     </div>
     <div class="text-5xl md:text-8xl pb-6 mt-8">Current Time</div>
-    <div class="flex justify-between mx-4">
+    <div class="flex space-x-2 md:space-x-8">
       <div
         id="hours"
-        class="h-[300] w-[120] min-w-[100px] md:min-w-[205px] text-center p-4 m-2 bg-white rounded-xl text-6xl md:text-9xl shadow-2xl"></div>
+        class="min-w-[80px] md:min-w-[205px] text-center p-4 bg-white rounded-xl text-4xl md:text-9xl shadow-2xl"></div>
       <div
         id="minutes"
-        class="h-[300] w-[120] min-w-[100px] md:min-w-[205px] text-center p-4 m-2 bg-white rounded-xl text-6xl md:text-9xl shadow-2xl"></div>
+        class="min-w-[80px] md:min-w-[205px] text-center p-4 bg-white rounded-xl text-4xl md:text-9xl shadow-2xl"></div>
       <div
         id="seconds"
-        class="h-[300] w-[120] min-w-[100px] md:min-w-[205px] text-center p-4 m-2 bg-white rounded-xl text-6xl md:text-9xl hidden md:block shadow-2xl"></div>
+        class="min-w-[80px] md:min-w-[205px] text-center p-4 bg-white rounded-xl text-4xl md:text-9xl hidden md:block shadow-2xl"></div>
       <div
         id="AM"
-        class="h-[300] w-[120] min-w-[100px] md:min-w-[205px] text-center p-4 m-2 bg-white rounded-xl text-6xl md:text-9xl shadow-2xl"></div>
+        class="min-w-[80px] md:min-w-[205px] text-center p-4 bg-white rounded-xl text-4xl md:text-9xl shadow-2xl"></div>
     </div>
 
     <div
       id="showSec"
-      class="mt-8 text-white border border-white rounded-2xl p-4 md:hidden hover:text-black hover:bg-white shadow-2xl hover:cursor-pointer duration-500 hover:scale-105">
+      class="mt-8 text-white border border-white rounded-2xl p-4 md:hidden hover:text-black hover:bg-white shadow-2xl hover:cursor-pointer hover:scale-105">
       Show Seconds
     </div>
     <script src="index.js"></script>
