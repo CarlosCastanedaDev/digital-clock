@@ -17,11 +17,11 @@ function showTime() {
   }
 
   if (hour == 12) {
-    hr = 12;
+    hour = 12;
     am_pm = 'PM';
   }
   if (hour == 0) {
-    hr = 12;
+    hour = 12;
     am_pm = 'AM';
   }
 
